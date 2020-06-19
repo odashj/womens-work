@@ -1,0 +1,96 @@
+
+/*tablets*/
+@media only screen and (max-width: 760px) {
+
+	/*type*/
+
+	h1 { 
+		font-size: 10vw;
+	}
+
+	h2 { 
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+
+	h3 {
+		font-size: 10px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	/*padding*/
+
+	.top-padding-small {
+		padding-top: 12px;
+	}
+
+	.top-padding-large {
+		padding-top: 40px;
+	}
+
+	.bottom-padding-large {
+		padding-bottom: 40px;
+	}
+
+	.top-padding-xlarge {
+		padding-top: 60px;
+	}
+
+	.chart-copy {
+		padding-top: 40px;
+	}
+
+}
+
+
+/*mobile*/
+@media only screen and (max-width: 480px) {
+
+	.desktop-img {
+		display: none !important;
+	}
+
+		.mobile-img {
+		display: block !important;
+	}
+
+	/*padding*/
+
+	.top-padding-small {
+		padding-top: 12px;
+	}
+
+	.top-padding-large {
+		padding-top: 40px;
+	}
+
+	.bottom-padding-large {
+		padding-bottom: 20px;
+	}
+
+	.top-padding-xlarge {
+		padding-top: 30px;
+	}
+
+	.chart-copy {
+		padding-top: 10px;
+	}
+
+	h2 { 
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+		p {
+		font-size: 14px;
+	}
+
+		h3 {
+		font-size: 12px;
+	}
+
+}
