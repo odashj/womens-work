@@ -329,10 +329,6 @@ p {
 	z-index: 1000 !important;
 }
 
-.zoom {
-	display:inline-block;
-	position: relative;
-}
 
 
 .zoom img {
