@@ -39,7 +39,8 @@
 
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src='node_modules/jquery-zoom/jquery.zoom.js'></script> 
 
 	<!-- Favicon -->
 	<link rel="icon" href="images/favicon.png">
@@ -82,7 +83,9 @@
 					<div id="trigger-1"></div>
 					<div class="col span_6_of_12">
 						<img src="images/time-spent.jpg" class="chart">
-						<img src="images/time-spent_labels.jpg" class="chart" id="labels-1">
+						<span class='zoom chart' id='labels-1'>
+							<img src='images/time-spent_labels.jpg'>
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -99,7 +102,9 @@
 					<div id="trigger-2"></div>
 					<div class="col span_6_of_12 mobile-img">
 						<img src="images/motherhood-pentalty.jpg" class="chart">
-						<img src="images/motherhood-pentalty_labels.jpg" class="chart" id="labels-2-m">
+						<span class='zoom chart' id="labels-2-m">
+							<img src="images/motherhood-pentalty_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -109,7 +114,9 @@
 					</div>
 					<div class="col span_6_of_12 desktop-img">
 						<img src="images/motherhood-pentalty.jpg" class="chart">
-						<img src="images/motherhood-pentalty_labels.jpg" class="chart" id="labels-2">
+						<span class='zoom chart' id="labels-2">
+							<img src="images/motherhood-pentalty_labels.jpg">
+						</span>
 					</div>
 				</a>
 			</div>
@@ -121,7 +128,9 @@
 					<div id="trigger-3"></div>
 					<div class="col span_6_of_12">
 						<img src="images/harassment.jpg" class="chart">
-						<img src="images/harassment_labels.jpg" class="chart" id="labels-3">
+						<span class='zoom chart' id='labels-3'>
+							<img src="images/harassment_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -138,7 +147,9 @@
 					<div id="trigger-4"></div>
 					<div class="col span_6_of_12 mobile-img">
 						<img src="images/paygap-state.jpg" class="chart">
-						<img src="images/paygap-state_labels.jpg" class="chart" id="labels-4-m">
+						<span class='zoom chart' id='labels-3'>
+							<img src="images/paygap-state_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -149,7 +160,9 @@
 
 					<div class="col span_6_of_12 desktop-img">
 						<img src="images/paygap-state.jpg" class="chart">
-						<img src="images/paygap-state_labels.jpg" class="chart" id="labels-4">
+						<span class='zoom chart' id='labels-4'>
+							<img src="images/paygap-state_labels.jpg">
+						</span>
 					</div>
 				</a>
 			</div>
@@ -160,7 +173,9 @@
 					<div id="trigger-5"></div>
 					<div class="col span_6_of_12">
 						<img src="images/promotions.jpg" class="chart">
-						<img src="images/promotions_labels.jpg" class="chart" id="labels-5">
+						<span class='zoom chart' id='labels-5'>
+							<img src="images/promotions_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -177,7 +192,9 @@
 					<div id="trigger-6"></div>
 					<div class="col span_6_of_12 mobile-img">
 						<img src="images/breadwinners.jpg" class="chart">
-						<img src="images/breadwinners_labels.jpg" class="chart" id="labels-6-m">
+						<span class='zoom chart' id='labels-6-m'>
+							<img src="images/breadwinners_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -187,7 +204,9 @@
 					</div>
 					<div class="col span_6_of_12 desktop-img">
 						<img src="images/breadwinners.jpg" class="chart">
-						<img src="images/breadwinners_labels.jpg" class="chart" id="labels-6">
+						<span class='zoom chart' id='labels-6'>
+							<img src="images/breadwinners_labels.jpg">
+						</span>
 					</div>
 				</a>
 			</div>
@@ -198,7 +217,9 @@
 					<div id="trigger-7"></div>
 					<div class="col span_6_of_12">
 						<img src="images/leadership.jpg" class="chart">
-						<img src="images/leadership_labels.jpg" class="chart" id="labels-7">
+						<span class='zoom chart' id='labels-7'>
+							<img src="images/leadership_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -215,7 +236,9 @@
 					<div id="trigger-8"></div>
 					<div class="col span_6_of_12 mobile-img">
 						<img src="images/sacrifices.jpg" class="chart">
-						<img src="images/sacrifices_labels.jpg" class="chart" id="labels-8-m">
+						<span class='zoom chart' id='labels-8-m'>
+							<img src="images/sacrifices_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -225,7 +248,9 @@
 					</div>
 					<div class="col span_6_of_12 desktop-img">
 						<img src="images/sacrifices.jpg" class="chart">
-						<img src="images/sacrifices_labels.jpg" class="chart" id="labels-8">
+						<span class='zoom chart' id='labels-8'>
+							<img src="images/sacrifices_labels.jpg">
+						</span>
 					</div>
 				</a>
 			</div>
@@ -236,7 +261,9 @@
 					<div id="trigger-9"></div>
 					<div class="col span_6_of_12">
 						<img src="images/paygap.jpg" class="chart">
-						<img src="images/paygap_labels.jpg" class="chart" id="labels-9">
+						<span class='zoom chart' id='labels-9'>
+							<img src="images/paygap_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -253,7 +280,9 @@
 					<div id="trigger-10"></div>
 					<div class="col span_6_of_12 mobile-img">
 						<img src="images/workforce-rate.jpg" class="chart">
-						<img src="images/workforce-rate_labels.jpg" class="chart" id="labels-10-m">
+						<span class='zoom chart' id='labels-10-m'>
+							<img src="images/workforce-rate_labels.jpg">
+						</span>
 					</div>
 
 					<div class="col span_4_of_12">
@@ -264,7 +293,9 @@
 					</div>
 					<div class="col span_6_of_12 desktop-img">
 						<img src="images/workforce-rate.jpg" class="chart">
-						<img src="images/workforce-rate_labels.jpg" class="chart" id="labels-10">
+						<span class='zoom chart' id='labels-10'>
+							<img src="images/workforce-rate_labels.jpg">
+						</span>
 					</div>
 				</a>
 			</div>
@@ -275,7 +306,9 @@
 					<div id="trigger-11"></div>
 					<div class="col span_6_of_12">
 						<img src="images/education.jpg" class="chart">
-						<img src="images/education_labels.jpg" class="chart" id="labels-11">
+						<span class='zoom chart' id='labels-11'>
+							<img src="images/education_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -292,7 +325,9 @@
 					<div id="trigger-12"></div>
 					<div class="col span_6_of_12 mobile-img">
 						<img src="images/days-worked.jpg" class="chart">
-						<img src="images/days-worked_labels.jpg" class="chart" id="labels-12-m">
+						<span class='zoom chart' id='labels-12-m'>
+							<img src="images/days-worked_labels.jpg">
+						</span>
 					</div>
 					<div class="col span_4_of_12">
 						<div class="chart-copy">
@@ -302,7 +337,9 @@
 					</div>
 					<div class="col span_6_of_12 desktop-img">
 						<img src="images/days-worked.jpg" class="chart">
-						<img src="images/days-worked_labels.jpg" class="chart" id="labels-12">
+						<span class='zoom chart' id='labels-12'>
+							<img src="images/days-worked_labels.jpg">
+						</span>
 					</div>
 				</a>
 			</div>
@@ -362,7 +399,7 @@
     });
 });
 
-		$(document).ready( function() {
+	$(document).ready( function() {
     $("#labels-2-m").hide(); //hide your div initially
     var topOfOthDiv = $("#trigger-2").offset().top;
     $(window).scroll(function() {
@@ -438,7 +475,7 @@
         }
     });
 });
-		$(document).ready( function() {
+	$(document).ready( function() {
     $("#labels-6-m").hide(); //hide your div initially
     var topOfOthDiv = $("#trigger-6").position().top;
     $(window).scroll(function() {
@@ -519,7 +556,7 @@
     });
 });
 
-		$(document).ready( function() {
+	$(document).ready( function() {
     $("#labels-10-m").hide(); //hide your div initially
     var topOfOthDiv = $("#trigger-10").position().top;
     $(window).scroll(function() {
@@ -558,7 +595,7 @@
     });
 });
 
-		$(document).ready( function() {
+	$(document).ready( function() {
     $("#labels-12-m").hide(); //hide your div initially
     var topOfOthDiv = $("#trigger-12").position().top;
     $(window).scroll(function() {
@@ -570,5 +607,53 @@
         }
     });
 });
+
+	$(document).ready(function(){
+		$('#labels-1').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-2').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-3').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-4').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-5').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-6').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-7').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-8').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-9').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-10').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-11').zoom();
+	});
+
+	$(document).ready(function(){
+		$('#labels-12').zoom();
+	});
 </script>
 

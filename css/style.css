@@ -329,8 +329,23 @@ p {
 	z-index: 1000 !important;
 }
 
+.zoom {
+	display:inline-block;
+	position: relative;
+}
 
 
+.zoom img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.zoom img::selection { background-color: transparent; }
+
+.zoom:hover {
+	cursor: crosshair;
+}
 
 .desktop-img {
 	display: block !important;
