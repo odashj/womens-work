@@ -40,7 +40,7 @@
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-<!-- 	<script src='node_modules/jquery-zoom/jquery.zoom.js'></script>  -->
+	<!-- 	<script src='node_modules/jquery-zoom/jquery.zoom.js'></script>  -->
 
 	<!-- Favicon -->
 	<link rel="icon" href="images/favicon.png">
@@ -350,8 +350,8 @@
 					<h2 style="color:#414141">About the Project</h2>
 				</div>
 				<div class="col span_7_of_12">
-					<h2 style="color:#414141">All pieces in this series are for sale and 100% of proceeds will go to AAPF’s <a href="https://aapf.org/sayhername" target="#" style="text-decoration: underline; color:#414141">#SayHerName</a> Campaign. Please reach out to <a href="mailto:olivia@o-j.co" style="text-decoration: underline; color:#414141">olivia@o-j.co</a> for any questions and inquiries.</h2>
-					<p class="top-padding-small" style="color:#414141">Women’s Work was created by <a href="http://o-j.co"  target="#" style="color:#414141">Olivia Johnson</a> as a reaction to the discrimination that women, notably women of color, continue to face in the workforce. The medium of cross stitch, a form of art that tends to be labeled as kitsch and women’s hobby craft, was intentionally utilized to emphasize the fact that women’s labor is routinely dismissed and undervalued.</p>
+					<!-- <h2 style="color:#414141">All pieces in this series are for sale and 100% of proceeds will go to AAPF’s <a href="https://aapf.org/sayhername" target="#" style="text-decoration: underline; color:#414141">#SayHerName</a> Campaign. Please reach out to <a href="mailto:olivia@o-j.co" style="text-decoration: underline; color:#414141">olivia@o-j.co</a> for any questions and inquiries.</h2> -->
+					<p style="color:#414141">Women’s Work was created by <a href="http://o-j.co"  target="#" style="color:#414141">Olivia Johnson</a> as a reaction to the discrimination that women, notably women of color, continue to face in the workforce. The medium of cross stitch, a form of art that tends to be labeled as kitsch and women’s hobby craft, was intentionally utilized to emphasize the fact that women’s labor is routinely dismissed and undervalued.</p>
 					<h3 class="top-padding-small" style="color:#414141">© Olivia Johnson 2020</h3>
 				</div>
 			</div>
@@ -374,312 +374,289 @@
 
 
 	$(document).ready( function() {
-    $("#labels-1").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-1").offset().top;
-    $(window).scroll(function() {
+		$(window).scroll(function() {
+    	    $("#labels-1").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-1").offset().top;
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-1").fadeIn(); //reached the desired point -- show div
+            $("#labels-1").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-1").fadeOut(); //else above the desired point -- hide div
+            $("#labels-1").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
-
-	$(document).ready( function() {
-    $("#labels-2").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-2").offset().top;
-    $(window).scroll(function() {
+		$(window).scroll(function() {
+    	    $("#labels-2").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-2").offset().top;
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-2").fadeIn(); //reached the desired point -- show div
+            $("#labels-2").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-2").fadeOut(); //else above the desired point -- hide div
+            $("#labels-2").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
-
-	$(document).ready( function() {
-    $("#labels-2-m").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-2").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-2-m").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-2-m").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
-
-	$(document).ready( function() {
-    $("#labels-3").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-3").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-3").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-3").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
-
-	$(document).ready( function() {
-    $("#labels-4").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-4").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-4").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-4").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
-	$(document).ready( function() {
-    $("#labels-4-m").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-4").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-4-m").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-4-m").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
-
-	$(document).ready( function() {
-    $("#labels-5").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-5").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-5").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-5").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
-
-	$(document).ready( function() {
-    $("#labels-6").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-6").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-6").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-6").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
-	$(document).ready( function() {
-    $("#labels-6-m").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-6").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-6-m").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-6-m").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
-
-	$(document).ready( function() {
-    $("#labels-7").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-7").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-7").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-7").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
 
 
-	$(document).ready( function() {
-    $("#labels-8").hide(); //hide your div initially
+		$(window).scroll(function() {
+    	    $("#labels-2-m").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-2").offset().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-2-m").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-2-m").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+
+		$(window).scroll(function() {
+    	    $("#labels-3").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-3").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-3").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-3").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+
+		$(window).scroll(function() {
+    	 $("#labels-4").css("opacity","0"); //hide your div initially
+    	 var topOfOthDiv = $("#trigger-4").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-4").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-4").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+		$(window).scroll(function() {
+    	    $("#labels-4-m").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-4").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-4-m").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-4-m").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+		$(window).scroll(function() {
+   			 $("#labels-5").css("opacity","0"); //hide your div initially
+   			 var topOfOthDiv = $("#trigger-5").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-5").css("opacity","1");//reached the desired point -- show div
+        }
+        else{
+            $("#labels-5").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+		$(window).scroll(function() {
+   			 $("#labels-6").css("opacity","0"); //hide your div initially
+   			 var topOfOthDiv = $("#trigger-6").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-6").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-6").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+		$(window).scroll(function() {
+    		$("#labels-6-m").css("opacity","0"); //hide your div initially
+    		var topOfOthDiv = $("#trigger-6").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-6-m").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-6-m").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+
+		$(window).scroll(function() {
+    	    $("#labels-7").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-7").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-7").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-7").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+		$(window).scroll(function() {
+    	    $("#labels-8").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-8").position().top;
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#labels-8").css("opacity","1"); //reached the desired point -- show div
+        }
+        else{
+            $("#labels-8").css("opacity","0"); //else above the desired point -- hide div
+        }
+    });
+
+		$(window).scroll(function() {
+
+    $("#labels-8-m").css("opacity","0"); //hide your div initially
     var topOfOthDiv = $("#trigger-8").position().top;
-    $(window).scroll(function() {
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-8").fadeIn(); //reached the desired point -- show div
+            $("#labels-8-m").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-8").fadeOut(); //else above the desired point -- hide div
+            $("#labels-8-m").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
 
-	$(document).ready( function() {
-    $("#labels-8-m").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-8").position().top;
-    $(window).scroll(function() {
+
+		$(window).scroll(function() {
+    	    $("#labels-9").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-9").position().top;
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-8-m").fadeIn(); //reached the desired point -- show div
+            $("#labels-9").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-8-m").fadeOut(); //else above the desired point -- hide div
+            $("#labels-9").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
 
-	$(document).ready( function() {
-    $("#labels-9").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-9").position().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-9").fadeIn(); //reached the desired point -- show div
-        }
-        else{
-            $("#labels-9").fadeOut(); //else above the desired point -- hide div
-        }
-    });
-});
+		$(window).scroll(function() {
 
-
-
-	$(document).ready( function() {
-    $("#labels-10").hide(); //hide your div initially
+    $("#labels-10").css("opacity","0"); //hide your div initially
     var topOfOthDiv = $("#trigger-10").position().top;
-    $(window).scroll(function() {
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-10").fadeIn(); //reached the desired point -- show div
+            $("#labels-10").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-10").fadeOut(); //else above the desired point -- hide div
+            $("#labels-10").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
 
-	$(document).ready( function() {
-    $("#labels-10-m").hide(); //hide your div initially
+		$(window).scroll(function() {
+
+    $("#labels-10-m").css("opacity","0"); //hide your div initially
     var topOfOthDiv = $("#trigger-10").position().top;
-    $(window).scroll(function() {
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-10-m").fadeIn(); //reached the desired point -- show div
+            $("#labels-10-m").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-10-m").fadeOut(); //else above the desired point -- hide div
+            $("#labels-10-m").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
 
-	$(document).ready( function() {
-    $("#labels-11").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-11").position().top;
-    $(window).scroll(function() {
+
+		$(window).scroll(function() {
+    	    $("#labels-11").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-11").position().top;
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-11").fadeIn(); //reached the desired point -- show div
+            $("#labels-11").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-11").fadeOut(); //else above the desired point -- hide div
+            $("#labels-11").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
 
-	$(document).ready( function() {
-    $("#labels-12").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-12").position().top;
-    $(window).scroll(function() {
+
+		$(window).scroll(function() {
+    	    $("#labels-12").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-12").position().top;
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-12").fadeIn(); //reached the desired point -- show div
+            $("#labels-12").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-12").fadeOut(); //else above the desired point -- hide div
+            $("#labels-12").css("opacity","0"); //else above the desired point -- hide div
         }
     });
-});
 
-	$(document).ready( function() {
-    $("#labels-12-m").hide(); //hide your div initially
-    var topOfOthDiv = $("#trigger-12").position().top;
-    $(window).scroll(function() {
+
+		$(window).scroll(function() {
+    	    $("#labels-12-m").css("opacity","0"); //hide your div initially
+    	    var topOfOthDiv = $("#trigger-12").position().top;
         if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#labels-12-m").fadeIn(); //reached the desired point -- show div
+            $("#labels-12-m").css("opacity","1"); //reached the desired point -- show div
         }
         else{
-            $("#labels-12-m").fadeOut(); //else above the desired point -- hide div
+            $("#labels-12-m").css("opacity","0"); //else above the desired point -- hide div
         }
     });
+	});
+
+$(document).ready(function(){
+	$('#labels-1').zoom();
 });
 
-	$(document).ready(function(){
-		$('#labels-1').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-2').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-2').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-2-m').zoom();
+});
 
-		$(document).ready(function(){
-		$('#labels-2-m').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-3').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-3').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-4').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-4').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-4-m').zoom();
+});
 
-		$(document).ready(function(){
-		$('#labels-4-m').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-5').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-5').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-6').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-6').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-6-m').zoom();
+});
 
-		$(document).ready(function(){
-		$('#labels-6-m').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-7').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-7').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-8').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-8').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-8-m').zoom();
+});
 
-		$(document).ready(function(){
-		$('#labels-8-m').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-9').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-9').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-10').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-10').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-10-m').zoom();
+});
 
-		$(document).ready(function(){
-		$('#labels-10-m').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-11').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-11').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-12').zoom();
+});
 
-	$(document).ready(function(){
-		$('#labels-12').zoom();
-	});
-
-		$(document).ready(function(){
-		$('#labels-12-m').zoom();
-	});
+$(document).ready(function(){
+	$('#labels-12-m').zoom();
+});
 </script>
+
+
 
 <!-- zoom.js -->
 
@@ -688,13 +665,13 @@
 	Zoom 1.7.21
 	license: MIT
 	http://www.jacklmoore.com/zoom
-*/
-(function ($) {
-	var defaults = {
-		url: false,
-		callback: false,
-		target: false,
-		duration: 120,
+	*/
+	(function ($) {
+		var defaults = {
+			url: false,
+			callback: false,
+			target: false,
+			duration: 120,
 		on: 'mouseover', // other options: grab, click, toggle
 		touch: true, // enables a touch fallback
 		onZoomIn: false,
@@ -705,15 +682,15 @@
 	// Core Zoom Logic, independent of event listeners.
 	$.zoom = function(target, source, img, magnify) {
 		var targetHeight,
-			targetWidth,
-			sourceHeight,
-			sourceWidth,
-			xRatio,
-			yRatio,
-			offset,
-			$target = $(target),
-			position = $target.css('position'),
-			$source = $(source);
+		targetWidth,
+		sourceHeight,
+		sourceWidth,
+		xRatio,
+		yRatio,
+		offset,
+		$target = $(target),
+		position = $target.css('position'),
+		$source = $(source);
 
 		// The parent element needs positioning so that the zoomed element can be correctly positioned within.
 		target.style.position = /(absolute|fixed)/.test(position) ? position : 'relative';
@@ -721,19 +698,19 @@
 		img.style.width = img.style.height = '';
 
 		$(img)
-			.addClass('zoomImg')
-			.css({
-				position: 'absolute',
-				top: 0,
-				left: 0,
-				opacity: 0,
-				width: img.width * magnify,
-				height: img.height * magnify,
-				border: 'none',
-				maxWidth: 'none',
-				maxHeight: 'none'
-			})
-			.appendTo(target);
+		.addClass('zoomImg')
+		.css({
+			position: 'absolute',
+			top: 0,
+			left: 0,
+			opacity: 0,
+			width: img.width * magnify,
+			height: img.height * magnify,
+			border: 'none',
+			maxWidth: 'none',
+			maxHeight: 'none'
+		})
+		.appendTo(target);
 
 		return {
 			init: function() {
@@ -755,7 +732,7 @@
 			},
 			move: function (e) {
 				var left = (e.pageX - offset.left),
-					top = (e.pageY - offset.top);
+				top = (e.pageY - offset.top);
 
 				top = Math.max(Math.min(top, sourceHeight), 0);
 				left = Math.max(Math.min(left, sourceWidth), 0);
@@ -821,24 +798,24 @@
 				// Mouse events
 				if (settings.on === 'grab') {
 					$source
-						.on('mousedown.zoom',
-							function (e) {
-								if (e.which === 1) {
-									$(document).one('mouseup.zoom',
-										function () {
-											stop();
+					.on('mousedown.zoom',
+						function (e) {
+							if (e.which === 1) {
+								$(document).one('mouseup.zoom',
+									function () {
+										stop();
 
-											$(document).off(mousemove, zoom.move);
-										}
+										$(document).off(mousemove, zoom.move);
+									}
 									);
 
-									start(e);
+								start(e);
 
-									$(document).on(mousemove, zoom.move);
+								$(document).on(mousemove, zoom.move);
 
-									e.preventDefault();
-								}
+								e.preventDefault();
 							}
+						}
 						);
 				} else if (settings.on === 'click') {
 					$source.on('click.zoom',
@@ -856,11 +833,11 @@
 										clicked = false;
 										$(document).off(mousemove, zoom.move);
 									}
-								);
+									);
 								return false;
 							}
 						}
-					);
+						);
 				} else if (settings.on === 'toggle') {
 					$source.on('click.zoom',
 						function (e) {
@@ -871,40 +848,40 @@
 							}
 							clicked = !clicked;
 						}
-					);
+						);
 				} else if (settings.on === 'mouseover') {
 					zoom.init(); // Preemptively call init because IE7 will fire the mousemove handler before the hover handler.
 
 					$source
-						.on('mouseenter.zoom', start)
-						.on('mouseleave.zoom', stop)
-						.on(mousemove, zoom.move);
+					.on('mouseenter.zoom', start)
+					.on('mouseleave.zoom', stop)
+					.on(mousemove, zoom.move);
 				}
 
 				// Touch fallback
 				if (settings.touch) {
 					$source
-						.on('touchstart.zoom', function (e) {
-							e.preventDefault();
-							if (touched) {
-								touched = false;
-								stop();
-							} else {
-								touched = true;
-								start( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
-							}
-						})
-						.on('touchmove.zoom', function (e) {
-							e.preventDefault();
-							zoom.move( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
-						})
-						.on('touchend.zoom', function (e) {
-							e.preventDefault();
-							if (touched) {
-								touched = false;
-								stop();
-							}
-						});
+					.on('touchstart.zoom', function (e) {
+						e.preventDefault();
+						if (touched) {
+							touched = false;
+							stop();
+						} else {
+							touched = true;
+							start( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
+						}
+					})
+					.on('touchmove.zoom', function (e) {
+						e.preventDefault();
+						zoom.move( e.originalEvent.touches[0] || e.originalEvent.changedTouches[0] );
+					})
+					.on('touchend.zoom', function (e) {
+						e.preventDefault();
+						if (touched) {
+							touched = false;
+							stop();
+						}
+					});
 				}
 				
 				if ($.isFunction(settings.callback)) {

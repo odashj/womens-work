@@ -36,8 +36,9 @@ h2 a:hover {
 	position: relative;
 	width: 100vw;
 	max-width: 100%;
-	height: 4em;
+	height: 10%;
 	overflow-x: hidden;
+	overflow-y: visible;
 }
 
 .track1 {
@@ -168,109 +169,128 @@ p {
 
 #labels-1 {
 	vertical-align: top;
+	position: relative;
 	margin-top: -100%;
+	transition: opacity 300ms;
 }
 
 #labels-2 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-2-m {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-3 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-4 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-4-m {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-5 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-6 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-6-m {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-7 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-8 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-8-m {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-9 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-10 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-10-m {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-11 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-12 {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #labels-12-m {
 	vertical-align: top;
 	position: relative;
 	margin-top: -100%;
+		transition: opacity 300ms;
 }
 
 #trigger-1 {
